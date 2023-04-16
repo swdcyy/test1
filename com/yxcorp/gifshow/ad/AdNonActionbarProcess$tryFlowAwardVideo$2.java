@@ -1,0 +1,34 @@
+package com.yxcorp.gifshow.ad.AdNonActionbarProcess$tryFlowAwardVideo$2;
+import msd.a;
+import kotlin.jvm.internal.Lambda;
+import com.yxcorp.gifshow.ad.AdNonActionbarProcess;
+import java.lang.Object;
+import java.lang.Boolean;
+import java.lang.Class;
+import java.lang.String;
+import com.kwai.robust.PatchProxy;
+import com.kwai.robust.PatchProxyResult;
+import android.app.Activity;
+import com.yxcorp.gifshow.ad.AdProcess;
+import com.yxcorp.gifshow.photoad.model.AdDataWrapper;
+import nx8.f;
+
+public final class AdNonActionbarProcess$tryFlowAwardVideo$2 extends Lambda implements a	// class@0014d9
+{
+    public final AdNonActionbarProcess this$0;
+
+    public void AdNonActionbarProcess$tryFlowAwardVideo$2(AdNonActionbarProcess p0){
+       this.this$0 = p0;
+       super(0);
+    }
+    public Object invoke(){
+       return Boolean.valueOf(this.invoke());
+    }
+    public final boolean invoke(){
+       Object obj = PatchProxy.apply(null, this, AdNonActionbarProcess$tryFlowAwardVideo$2.class, "1");
+       if (obj != PatchProxyResult.class) {
+          return obj.booleanValue();
+       }
+       return f.f(this.this$0.c(), this.this$0.d());
+    }
+}

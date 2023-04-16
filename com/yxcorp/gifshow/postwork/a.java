@@ -1,0 +1,67 @@
+package com.yxcorp.gifshow.postwork.a;
+import java.lang.String;
+import brd.t;
+import erd.g;
+import com.yxcorp.gifshow.postwork.PostStatus;
+import java.util.List;
+import com.kwai.feature.post.api.feature.upload.model.RickonWholeUploadParams;
+import r26.e;
+import r26.a;
+import java.lang.Runnable;
+import com.kwai.feature.post.api.feature.upload.interfaces.IUploadRequest;
+import android.content.Context;
+import com.kwai.video.minecraft.model.EditorSdk2V2$VideoEditorProject;
+import android.graphics.Bitmap;
+import java.io.File;
+import erd.r;
+import com.kwai.feature.post.api.feature.upload.model.PipelineKeyResponse;
+import com.kwai.feature.post.api.feature.encode.model.EncodeInfo;
+import com.kwai.feature.post.api.feature.upload.interfaces.IUploadInfo;
+import com.kuaishou.edit.draft.Workspace;
+import r26.b;
+
+public interface abstract a	// class@0010c1
+{
+
+    t A0(String p0);
+    void D1(g p0);
+    List E2(boolean p0,PostStatus[] p1);
+    void J1(String p0,String p1,long p2,RickonWholeUploadParams p3);
+    void K3(e p0);
+    a L0(int p0);
+    a Q3(String p0);
+    boolean S(int p0,boolean p1);
+    List T0(PostStatus[] p0);
+    void V3(e p0);
+    boolean W3(int p0,boolean p1,boolean p2,int p3,Runnable p4);
+    boolean X3(IUploadRequest p0,int p1);
+    boolean Y3(int p0,boolean p1,int p2);
+    void Z3(Context p0,EditorSdk2V2$VideoEditorProject p1,Bitmap p2);
+    long a();
+    t a2();
+    File a4();
+    List b4(r p0);
+    a c4(String p0);
+    boolean cancel(int p0);
+    void cancelAll();
+    a d4();
+    a e4(String p0);
+    void f4(String p0,PipelineKeyResponse p1);
+    void g0(Context p0,int p1);
+    a g4(int p0);
+    boolean h4(EncodeInfo p0,IUploadInfo p1);
+    void i4();
+    boolean j4(a p0);
+    void k4(boolean p0,boolean p1);
+    boolean l3(int p0,boolean p1);
+    PipelineKeyResponse l4(String p0);
+    boolean m4(Workspace p0,EditorSdk2V2$VideoEditorProject p1);
+    boolean n2();
+    boolean n4(int p0);
+    boolean o1(int p0,boolean p1,boolean p2);
+    void o4(g p0);
+    List p4(r p0);
+    int q0(b p0);
+    void release();
+    boolean z0();
+}

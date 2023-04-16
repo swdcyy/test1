@@ -1,0 +1,24 @@
+package com.kwai.performance.fluency.page.monitor.checker.FullyDrawTagChecker$hasFinishTag$1;
+import msd.a;
+import kotlin.jvm.internal.Lambda;
+import android.view.View;
+import java.lang.Object;
+import java.lang.String;
+import java.lang.StringBuilder;
+import java.lang.Class;
+
+public final class FullyDrawTagChecker$hasFinishTag$1 extends Lambda implements a	// class@0010ba
+{
+    public final View $view;
+
+    public void FullyDrawTagChecker$hasFinishTag$1(View p0){
+       this.$view = p0;
+       super(0);
+    }
+    public Object invoke(){
+       return this.invoke();
+    }
+    public final String invoke(){
+       return this.$view.getClass().getSimpleName()+": "+this.$view.getId()+" : is finish tag";
+    }
+}

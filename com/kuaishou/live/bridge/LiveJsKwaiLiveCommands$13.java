@@ -1,0 +1,32 @@
+package com.kuaishou.live.bridge.LiveJsKwaiLiveCommands$13;
+import msd.a;
+import kotlin.jvm.internal.Lambda;
+import java.lang.Object;
+import o63.j;
+import java.lang.Class;
+import java.lang.String;
+import com.kwai.robust.PatchProxy;
+import com.kwai.robust.PatchProxyResult;
+import r71.a;
+
+public final class LiveJsKwaiLiveCommands$13 extends Lambda implements a	// class@000d79
+{
+    public static final LiveJsKwaiLiveCommands$13 INSTANCE;
+
+    static {
+       LiveJsKwaiLiveCommands$13.INSTANCE = new LiveJsKwaiLiveCommands$13();
+    }
+    public void LiveJsKwaiLiveCommands$13(){
+       super(0);
+    }
+    public Object invoke(){
+       return this.invoke();
+    }
+    public final j invoke(){
+       Object obj = PatchProxy.apply(null, this, LiveJsKwaiLiveCommands$13.class, "1");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       return new a();
+    }
+}

@@ -1,0 +1,121 @@
+package com.kwai.performance.stability.crash.monitor.anr.config.AnrMonitorConfig;
+import java.io.Serializable;
+import yf7.f;
+import og7.a;
+import com.kwai.performance.stability.crash.monitor.anr.config.AnrMonitorConfigAdv;
+import java.lang.String;
+import java.lang.StringBuilder;
+
+public class AnrMonitorConfig extends f implements Serializable	// class@000e04
+{
+    public int checkTimeInterval;
+    public boolean disable;
+    public boolean disableSamplingWhenBlockEnable;
+    public int dispatchSamplingExploreMinWall;
+    public int[] dispatchSamplingStep;
+    public int dispatchSamplingStepTimesInterval;
+    public boolean enableActivityThreadMsgSingle;
+    public float enableAllThreshold;
+    public boolean enableCheckTimePauseAndResume;
+    public boolean enableChildProcessFunction;
+    public boolean enableChildProcessSampling;
+    public float enableDispatchSamplingThreshold;
+    public float enableHuiduThreshold;
+    public float enableIdleSamplingThreshold;
+    public boolean enableSamplingPauseAndResume;
+    public boolean enableSyncBarrierPauseAndResume;
+    public int[] idleSamplingStep;
+    public int idleSamplingStepTimesInterval;
+    public int idleTimeThreshold;
+    public int inputEventCostMinWall;
+    public int inputEventLogMaxLength;
+    public boolean isEnableDispatchSampling;
+    public boolean isEnableIdleSampling;
+    public boolean isHuidu;
+    public boolean isRemoveInvalidSyncBarrier;
+    public AnrMonitorConfigAdv mAdvConfig;
+    public int maxIdleHandlerMonitor;
+    public int maxQueueSize;
+    public int queuePackWall;
+    public int reportRemoveSyncBarrier;
+    public int samplingInterval;
+    public int stackDiffListMaxSize;
+    public int syncBarrierCheckSleep;
+    public int syncBarrierCheckThreshold;
+    public int syncBarrierCheckTimes;
+    public int syncBarrierDetectInterval;
+    public int syncBarrierFoundDepthMax;
+    public int syncBarrierMiniRemoveTime;
+    public int syncBarrierMiniSetTime;
+    public int syncBarrierTokenMiniDiff;
+    public int syncBarrierWhenMiniDiff;
+    public boolean tempDisableSyncBarrierCheck;
+    public boolean withEventCost;
+    public boolean withExtraCost;
+    public boolean withLogPage;
+
+    public void AnrMonitorConfig(){
+       super();
+       this.disable = false;
+       this.maxQueueSize = 200;
+       this.queuePackWall = 150;
+       this.idleTimeThreshold = 500;
+       this.checkTimeInterval = 150;
+       this.samplingInterval = 75;
+       this.syncBarrierMiniSetTime = 1000;
+       this.syncBarrierCheckThreshold = 3;
+       this.syncBarrierCheckTimes = 5;
+       this.syncBarrierCheckSleep = 800;
+       this.isEnableDispatchSampling = true;
+       this.dispatchSamplingStep = a.b;
+       this.dispatchSamplingExploreMinWall = 2000;
+       this.dispatchSamplingStepTimesInterval = 2;
+       this.isEnableIdleSampling = true;
+       this.idleSamplingStep = a.c;
+       this.idleSamplingStepTimesInterval = 2;
+       this.enableActivityThreadMsgSingle = false;
+       this.inputEventCostMinWall = 150;
+       this.inputEventLogMaxLength = 0x2800;
+       this.maxIdleHandlerMonitor = 100;
+       this.stackDiffListMaxSize = 0x2710;
+       this.enableSamplingPauseAndResume = false;
+       this.enableCheckTimePauseAndResume = false;
+       this.enableSyncBarrierPauseAndResume = false;
+       this.enableChildProcessFunction = true;
+       this.enableChildProcessSampling = false;
+       this.disableSamplingWhenBlockEnable = false;
+       this.enableAllThreshold = 0x3f800000;
+       this.enableDispatchSamplingThreshold = 0x3f800000;
+       this.enableIdleSamplingThreshold = 0x3f800000;
+       this.isRemoveInvalidSyncBarrier = false;
+       this.syncBarrierDetectInterval = 1000;
+       this.syncBarrierMiniRemoveTime = 4900;
+       this.syncBarrierTokenMiniDiff = 2;
+       this.syncBarrierWhenMiniDiff = -4000;
+       this.syncBarrierFoundDepthMax = 5;
+       this.reportRemoveSyncBarrier = 0;
+       this.tempDisableSyncBarrierCheck = false;
+       this.isHuidu = false;
+       this.enableHuiduThreshold = 0x3f800000;
+       this.withExtraCost = false;
+       this.withLogPage = true;
+       this.withEventCost = true;
+       this.mAdvConfig = new AnrMonitorConfigAdv();
+    }
+    public String toString(){
+       return "AnrMonitorConfig{disable="+this.disable+", enableAllThreshold="+this.enableAllThreshold+", isHuidu="+this.isHuidu+", enableHuiduThreshold="+this.enableHuiduThreshold+'}';
+    }
+    public void updateSyncBarrierRelated(AnrMonitorConfig p0){
+       this.syncBarrierMiniSetTime = p0.syncBarrierMiniSetTime;
+       this.syncBarrierCheckThreshold = p0.syncBarrierCheckThreshold;
+       this.syncBarrierCheckTimes = p0.syncBarrierCheckTimes;
+       this.syncBarrierCheckSleep = p0.syncBarrierCheckSleep;
+       this.isRemoveInvalidSyncBarrier = p0.isRemoveInvalidSyncBarrier;
+       this.syncBarrierDetectInterval = p0.syncBarrierDetectInterval;
+       this.syncBarrierMiniRemoveTime = p0.syncBarrierMiniRemoveTime;
+       this.syncBarrierTokenMiniDiff = p0.syncBarrierTokenMiniDiff;
+       this.reportRemoveSyncBarrier = p0.reportRemoveSyncBarrier;
+       this.syncBarrierWhenMiniDiff = p0.syncBarrierWhenMiniDiff;
+       this.syncBarrierFoundDepthMax = p0.syncBarrierFoundDepthMax;
+    }
+}

@@ -1,0 +1,44 @@
+package ec9.d1;
+import ec9.k;
+import ec9.b1;
+import ec9.j;
+import java.lang.Object;
+import java.lang.String;
+import kotlin.jvm.internal.a;
+import sa6.a;
+import cc9.c;
+import java.lang.Class;
+import com.kwai.robust.PatchProxy;
+import sa6.b;
+import cc9.b;
+import j8c.a;
+import q87.c;
+import com.yxcorp.gifshow.camera.record.assistant.model.AssistantResponse;
+import cc9.g;
+
+public final class d1 extends k	// class@00216c
+{
+    public final j b;
+
+    public void d1(b1 p0,j p1){
+       a.p(p0, "provider");
+       a.p(p1, "viewModel");
+       super(p0);
+       this.b = p1;
+    }
+    public void c(a p0){
+       Object obj = p0;
+       if (PatchProxy.applyVoidOneRefs(obj, this, d1.class, "1")) {
+       }else {
+          a.p(obj, "action");
+          b uob = this.a().j();
+          if (uob.e()) {
+             Object[] objArray = new Object[0];
+             a.D().A("CameraAssistant", "run OpenAction, but currentStatus is not close", objArray);
+          }else {
+             this.a().h(b.a(uob, true, false, false, false, false, false, null, null, false, false, false, false, false, false, false, false, false, 0x1fffa, null));
+          }
+       }
+       return;
+    }
+}

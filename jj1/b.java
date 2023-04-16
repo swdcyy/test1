@@ -1,0 +1,44 @@
+package jj1.b;
+import pj1.b$b;
+import com.kuaishou.live.common.core.component.gift.domain.giftsend.LiveGiftSendModel;
+import jj1.a;
+import lj1.e;
+import java.lang.Object;
+import yg1.f;
+import java.lang.Class;
+import java.lang.String;
+import com.kwai.robust.PatchProxy;
+import kotlin.jvm.internal.a;
+import com.kuaishou.live.common.core.component.gift.base.model.Model;
+import java.util.ArrayList;
+import com.kuaishou.live.common.core.component.gift.log.LiveGiftTag;
+import pp.c;
+import com.kuaishou.android.live.log.b;
+
+public final class b implements b$b	// class@002bb5
+{
+    public final LiveGiftSendModel a;
+    public final a b;
+    public final e c;
+
+    public void b(LiveGiftSendModel p0,a p1,e p2){
+       this.a = p0;
+       this.b = p1;
+       this.c = p2;
+       super();
+    }
+    public void a(f p0){
+       if (PatchProxy.applyVoidOneRefs(p0, this, b.class, "1")) {
+          return;
+       }
+       a.p(p0, "result");
+       b tb = this.b;
+       if (tb != null) {
+          tb.b(p0);
+       }
+       this.a.d("send_gift_result", p0);
+       this.a.f().remove(this.c);
+       b.e0(LiveGiftTag.GIFT_SEND, "[LiveGiftSendModel][sendGiftToAnchor]", "result", p0, "task", this.c, "taskList", this.a.f());
+       return;
+    }
+}

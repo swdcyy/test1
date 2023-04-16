@@ -1,0 +1,61 @@
+package r97.a0;
+import r97.c0;
+import java.lang.String;
+import r97.s;
+import r97.i0;
+import r97.h0;
+import r97.t;
+import r97.r;
+import com.google.gson.JsonObject;
+import r97.p;
+import r97.j0;
+import java.util.Map;
+import android.app.Activity;
+import r97.d0;
+import r97.u;
+import java.lang.Throwable;
+import r97.q;
+import r97.v;
+import java.util.List;
+import r97.g0;
+import r97.a;
+import okhttp3.EventListener$Factory;
+
+public interface abstract a0 implements c0	// class@002338
+{
+
+    s A(String p0,String p1);
+    void B(i0 p0,h0 p1);
+    void C(t p0,h0 p1);
+    void E(r p0);
+    void F(JsonObject p0);
+    void G(h0 p0,String p1,boolean p2);
+    void H(p p0);
+    void I(i0 p0);
+    j0 K(h0 p0);
+    boolean L(h0 p0,String p1);
+    void a(String p0,String p1,String p2,JsonObject p3);
+    void b(String p0,String p1,String p2,Map p3);
+    void c(String p0,String p1,String p2,String p3);
+    void d(String p0,String p1,String p2,String p3,String p4);
+    boolean f(c0 p0,Activity p1,String p2,boolean p3,d0 p4);
+    void g(u p0);
+    void g3(String p0,String p1,String p2);
+    void h(String p0,String p1,Throwable p2);
+    void i(h0 p0,String p1);
+    j0 j(h0 p0);
+    void k(t p0);
+    boolean l(c0 p0,Activity p1,String p2,boolean p3);
+    void m(q p0);
+    void n(v p0);
+    List o(h0 p0,String p1);
+    List p();
+    void q(String p0,String p1,String p2,int p3);
+    void t(String p0);
+    void u(g0 p0);
+    void v(u p0);
+    s w(h0 p0);
+    void x(a p0);
+    void y(String p0,Throwable p1);
+    EventListener$Factory z();
+}

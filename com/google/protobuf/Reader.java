@@ -1,0 +1,62 @@
+package com.google.protobuf.Reader;
+import java.util.List;
+import com.google.protobuf.ByteString;
+import java.lang.Class;
+import com.google.protobuf.ExtensionRegistryLite;
+import java.lang.Object;
+import com.google.protobuf.Schema;
+import java.util.Map;
+import com.google.protobuf.MapEntryLite$Metadata;
+import java.lang.String;
+
+public interface abstract Reader	// class@0004a0
+{
+
+    int getFieldNumber();
+    int getTag();
+    boolean readBool();
+    void readBoolList(List p0);
+    ByteString readBytes();
+    void readBytesList(List p0);
+    double readDouble();
+    void readDoubleList(List p0);
+    int readEnum();
+    void readEnumList(List p0);
+    int readFixed32();
+    void readFixed32List(List p0);
+    long readFixed64();
+    void readFixed64List(List p0);
+    float readFloat();
+    void readFloatList(List p0);
+    Object readGroup(Class p0,ExtensionRegistryLite p1);
+    Object readGroupBySchemaWithCheck(Schema p0,ExtensionRegistryLite p1);
+    void readGroupList(List p0,Schema p1,ExtensionRegistryLite p2);
+    void readGroupList(List p0,Class p1,ExtensionRegistryLite p2);
+    int readInt32();
+    void readInt32List(List p0);
+    long readInt64();
+    void readInt64List(List p0);
+    void readMap(Map p0,MapEntryLite$Metadata p1,ExtensionRegistryLite p2);
+    Object readMessage(Class p0,ExtensionRegistryLite p1);
+    Object readMessageBySchemaWithCheck(Schema p0,ExtensionRegistryLite p1);
+    void readMessageList(List p0,Schema p1,ExtensionRegistryLite p2);
+    void readMessageList(List p0,Class p1,ExtensionRegistryLite p2);
+    int readSFixed32();
+    void readSFixed32List(List p0);
+    long readSFixed64();
+    void readSFixed64List(List p0);
+    int readSInt32();
+    void readSInt32List(List p0);
+    long readSInt64();
+    void readSInt64List(List p0);
+    String readString();
+    void readStringList(List p0);
+    void readStringListRequireUtf8(List p0);
+    String readStringRequireUtf8();
+    int readUInt32();
+    void readUInt32List(List p0);
+    long readUInt64();
+    void readUInt64List(List p0);
+    boolean shouldDiscardUnknownFields();
+    boolean skipField();
+}

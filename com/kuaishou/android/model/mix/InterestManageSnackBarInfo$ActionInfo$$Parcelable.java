@@ -1,0 +1,63 @@
+package com.kuaishou.android.model.mix.InterestManageSnackBarInfo$ActionInfo$$Parcelable;
+import android.os.Parcelable;
+import xwd.d;
+import com.kuaishou.android.model.mix.InterestManageSnackBarInfo$ActionInfo$$Parcelable$a;
+import com.kuaishou.android.model.mix.InterestManageSnackBarInfo$ActionInfo;
+import java.lang.Object;
+import android.os.Parcel;
+import xwd.a;
+import org.parceler.ParcelerRuntimeException;
+import java.lang.String;
+
+public class InterestManageSnackBarInfo$ActionInfo$$Parcelable implements Parcelable, d	// class@000cf0
+{
+    public InterestManageSnackBarInfo$ActionInfo actionInfo$$0;
+    public static final Parcelable$Creator CREATOR;
+
+    static {
+       InterestManageSnackBarInfo$ActionInfo$$Parcelable.CREATOR = new InterestManageSnackBarInfo$ActionInfo$$Parcelable$a();
+    }
+    public void InterestManageSnackBarInfo$ActionInfo$$Parcelable(InterestManageSnackBarInfo$ActionInfo p0){
+       super();
+       this.actionInfo$$0 = p0;
+    }
+    public static InterestManageSnackBarInfo$ActionInfo read(Parcel p0,a p1){
+       int i = p0.readInt();
+       if (p1.a(i)) {
+          if (!p1.d(i)) {
+             return p1.b(i);
+          }
+          throw new ParcelerRuntimeException("An instance loop was detected whild building Parcelable and deseralization cannot continue.  This error is most likely due to using @ParcelConstructor or @ParcelFactory.");
+       }else {
+          InterestManageSnackBarInfo$ActionInfo uActionInfo = new InterestManageSnackBarInfo$ActionInfo();
+          p1.f(p1.g(), uActionInfo);
+          uActionInfo.mDescription = p0.readString();
+          uActionInfo.mScheme = p0.readString();
+          p1.f(i, uActionInfo);
+          return uActionInfo;
+       }
+    }
+    public static void write(InterestManageSnackBarInfo$ActionInfo p0,Parcel p1,int p2,a p3){
+       p2 = p3.c(p0);
+       if (p2 != -1) {
+          p1.writeInt(p2);
+       }else {
+          p1.writeInt(p3.e(p0));
+          p1.writeString(p0.mDescription);
+          p1.writeString(p0.mScheme);
+       }
+       return;
+    }
+    public int describeContents(){
+       return 0;
+    }
+    public InterestManageSnackBarInfo$ActionInfo getParcel(){
+       return this.actionInfo$$0;
+    }
+    public Object getParcel(){
+       return this.getParcel();
+    }
+    public void writeToParcel(Parcel p0,int p1){
+       InterestManageSnackBarInfo$ActionInfo$$Parcelable.write(this.actionInfo$$0, p0, p1, new a());
+    }
+}

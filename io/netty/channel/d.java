@@ -1,0 +1,61 @@
+package io.netty.channel.d;
+import wqd.f;
+import java.lang.Comparable;
+import java.net.SocketAddress;
+import lqd.m;
+import io.netty.channel.r;
+import io.netty.channel.e;
+import java.lang.Object;
+import lqd.b;
+import io.netty.channel.q;
+import lqd.g;
+import io.netty.channel.d$a;
+import java.lang.Throwable;
+import lqd.i;
+import io.netty.channel.ChannelId;
+import kqd.e;
+
+public interface abstract d implements f, Comparable	// class@00108f
+{
+
+    boolean E();
+    SocketAddress F();
+    m F3();
+    SocketAddress G();
+    e I(r p0);
+    d J();
+    e K(SocketAddress p0,r p1);
+    e L(Object p0,r p1);
+    e M(r p0);
+    b N();
+    e O(SocketAddress p0,SocketAddress p1,r p2);
+    e P();
+    e Q(Object p0);
+    e R(Object p0);
+    e S(r p0);
+    e T(Object p0,r p1);
+    e U(SocketAddress p0,SocketAddress p1);
+    e V(SocketAddress p0,r p1);
+    boolean V2();
+    q W();
+    g W2();
+    d$a W3();
+    e X(Throwable p0);
+    e Y(SocketAddress p0);
+    r Z();
+    r a0();
+    e b0(SocketAddress p0);
+    e c0();
+    e close();
+    i d0();
+    e disconnect();
+    boolean e0();
+    d flush();
+    long i1();
+    ChannelId id();
+    boolean isOpen();
+    long k3();
+    e m0();
+    e r1();
+    d read();
+}

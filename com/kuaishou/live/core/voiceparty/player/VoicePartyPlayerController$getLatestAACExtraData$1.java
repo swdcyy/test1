@@ -1,0 +1,33 @@
+package com.kuaishou.live.core.voiceparty.player.VoicePartyPlayerController$getLatestAACExtraData$1;
+import msd.l;
+import kotlin.jvm.internal.Lambda;
+import java.lang.Object;
+import com.kwai.video.waynelive.LivePlayerController;
+import java.lang.Class;
+import java.lang.String;
+import com.kwai.robust.PatchProxy;
+import com.kwai.robust.PatchProxyResult;
+import kotlin.jvm.internal.a;
+
+public final class VoicePartyPlayerController$getLatestAACExtraData$1 extends Lambda implements l	// class@00181f
+{
+    public static final VoicePartyPlayerController$getLatestAACExtraData$1 INSTANCE;
+
+    static {
+       VoicePartyPlayerController$getLatestAACExtraData$1.INSTANCE = new VoicePartyPlayerController$getLatestAACExtraData$1();
+    }
+    public void VoicePartyPlayerController$getLatestAACExtraData$1(){
+       super(1);
+    }
+    public Object invoke(Object p0){
+       return this.invoke(p0);
+    }
+    public final byte[] invoke(LivePlayerController p0){
+       Object obj = PatchProxy.applyOneRefs(p0, this, VoicePartyPlayerController$getLatestAACExtraData$1.class, "1");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       a.p(p0, "$receiver");
+       return p0.getLatestAACExtraData();
+    }
+}

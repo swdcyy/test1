@@ -1,0 +1,32 @@
+package c9d.h$b$b;
+import ekd.f$j;
+import c9d.h$b;
+import android.animation.Animator;
+import java.lang.Object;
+import java.lang.Class;
+import java.lang.String;
+import com.kwai.robust.PatchProxy;
+import c9d.h;
+import c9d.i;
+import android.widget.ImageView;
+import com.yxcorp.gifshow.widget.cdn.KwaiCDNImageView;
+
+public class h$b$b extends f$j	// class@000506
+{
+    public final h$b a;
+
+    public void h$b$b(h$b p0){
+       this.a = p0;
+       super();
+    }
+    public void onAnimationEnd(Animator p0){
+       if (PatchProxy.applyVoidOneRefs(p0, this, h$b$b.class, "1")) {
+          return;
+       }
+       this.a.c.c.D.setVisibility(8);
+       this.a.c.c.C.setVisibility(0);
+       this.a.c.c.z.n0(R.string.arg_RES_7f10450c);
+       p0.M = "A";
+       return;
+    }
+}

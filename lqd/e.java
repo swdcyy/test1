@@ -1,0 +1,60 @@
+package lqd.e;
+import wqd.f;
+import java.lang.Throwable;
+import io.netty.channel.r;
+import io.netty.channel.e;
+import java.net.SocketAddress;
+import java.lang.Object;
+import io.netty.channel.q;
+import lqd.i;
+import lqd.f;
+import yqd.e;
+import kqd.e;
+import io.netty.channel.g;
+import java.lang.String;
+import io.netty.channel.d;
+
+public interface abstract e implements f	// class@001c98
+{
+
+    e A(Throwable p0);
+    e C();
+    e I(r p0);
+    e K(SocketAddress p0,r p1);
+    e L(Object p0,r p1);
+    e M(r p0);
+    e O(SocketAddress p0,SocketAddress p1,r p2);
+    e P();
+    e Q(Object p0);
+    e R(Object p0);
+    e S(r p0);
+    e T(Object p0,r p1);
+    e U(SocketAddress p0,SocketAddress p1);
+    e V(SocketAddress p0,r p1);
+    q W();
+    e X(Throwable p0);
+    e Y(SocketAddress p0);
+    r Z();
+    r a0();
+    e b0(SocketAddress p0);
+    e c0();
+    e close();
+    i d0();
+    e disconnect();
+    e f0();
+    e flush();
+    f g0();
+    e h0(Object p0);
+    e i0();
+    e j0();
+    e k0();
+    e l0();
+    e m0();
+    g n0();
+    String name();
+    d o();
+    boolean o0();
+    e read();
+    e x();
+    e y(Object p0);
+}

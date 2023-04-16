@@ -1,0 +1,87 @@
+package com.facebook.react.uimanager.UIManagerModule;
+import com.facebook.react.bridge.OnBatchCompleteListener;
+import com.facebook.react.bridge.UIManager;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactApplicationContext;
+import android.view.View;
+import ze.q0;
+import ze.w0;
+import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.Callback;
+import java.lang.String;
+import com.facebook.react.bridge.ReadableArray;
+import java.lang.Double;
+import java.util.Map;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.UIManagerModule$a;
+import df.c;
+import ze.m;
+import ze.x;
+import com.facebook.react.uimanager.f;
+import com.facebook.react.bridge.MemoryStatsCallback;
+import com.facebook.react.uimanager.l;
+import java.util.List;
+import cf.a;
+import java.lang.Object;
+
+public abstract class UIManagerModule extends ReactContextBaseJavaModule implements OnBatchCompleteListener, UIManager	// class@00132f
+{
+
+    public void UIManagerModule(ReactApplicationContext p0){
+       super(p0);
+    }
+    public abstract int addRootView(View p0);
+    public abstract void addUIBlock(q0 p0);
+    public abstract void addUIManagerListener(w0 p0);
+    public abstract void clearJSResponder();
+    public abstract void configureNextLayoutAnimation(ReadableMap p0,Callback p1,Callback p2);
+    public abstract void createView(int p0,String p1,int p2,ReadableMap p3);
+    public abstract void createViewBatch(int p0,ReadableArray p1);
+    public abstract void deleteViewBatch(int p0,ReadableArray p1);
+    public abstract void dismissPopupMenu();
+    public abstract void dispatchViewManagerCommand(int p0,int p1,ReadableArray p2);
+    public abstract void dispatchViewManagerStringCommand(Double p0,String p1,ReadableArray p2);
+    public abstract void enableDataView(boolean p0);
+    public abstract void endBatch();
+    public abstract void findSubviewIn(int p0,ReadableArray p1,Callback p2);
+    public abstract Map getConstants();
+    public abstract WritableMap getConstantsForViewManager(String p0);
+    public abstract WritableMap getDefaultEventTypes();
+    public abstract UIManagerModule$a getDirectEventNamesResolver();
+    public abstract c getEventDispatcher();
+    public abstract m getNativeViewHierarchyManager();
+    public abstract x getReactShadowNode(int p0);
+    public abstract f getUIImplementation();
+    public abstract void getUIMemoryStats(MemoryStatsCallback p0);
+    public abstract l getViewManagerRegistry_DO_NOT_USE();
+    public abstract void invalidateNodeLayout(int p0);
+    public abstract WritableMap lazilyLoadView(String p0);
+    public abstract void manageChildren(int p0,ReadableArray p1,ReadableArray p2,ReadableArray p3,ReadableArray p4,ReadableArray p5);
+    public abstract void measure(int p0,Callback p1);
+    public abstract void measureInWindow(int p0,Callback p1);
+    public abstract void measureLayout(int p0,int p1,Callback p2,Callback p3);
+    public abstract void measureLayoutRelativeToParent(int p0,Callback p1,Callback p2);
+    public abstract void onBatchComplete();
+    public abstract void onHostResume();
+    public abstract void playTouchSound();
+    public abstract void preComputeConstantsForViewManager(List p0);
+    public abstract void prependUIBlock(q0 p0);
+    public abstract void profileNextBatch();
+    public abstract void removeRootView(int p0);
+    public abstract void removeRootViewByNative(int p0);
+    public abstract void removeSubviewsFromContainerWithID(int p0);
+    public abstract void removeUIManagerListener(w0 p0);
+    public abstract void replaceExistingNonRootView(int p0,int p1);
+    public abstract int resolveRootTagFromReactTag(int p0);
+    public abstract View resolveView(int p0);
+    public abstract void setChildren(int p0,ReadableArray p1);
+    public abstract void setJSResponder(int p0,boolean p1);
+    public abstract void setLayoutAnimationEnabledExperimental(boolean p0);
+    public abstract void setViewHierarchyUpdateDebugListener(a p0);
+    public abstract void setViewLocalData(int p0,Object p1);
+    public abstract void showPopupMenu(int p0,ReadableArray p1,Callback p2,Callback p3);
+    public abstract void updateNodeSize(int p0,int p1,int p2);
+    public abstract void updateView(int p0,String p1,ReadableMap p2);
+    public abstract void updateViewBatch(int p0,ReadableArray p1);
+    public abstract void viewIsDescendantOf(int p0,int p1,Callback p2);
+}

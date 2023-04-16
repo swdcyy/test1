@@ -1,0 +1,21 @@
+package com.yxcorp.gifshow.detail.view.RecommendUserHorizonItemHeader;
+import android.widget.FrameLayout;
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.ViewGroup;
+import android.view.View;
+
+public class RecommendUserHorizonItemHeader extends FrameLayout	// class@001a54
+{
+
+    public void RecommendUserHorizonItemHeader(Context p0){
+       super(p0, null);
+    }
+    public void RecommendUserHorizonItemHeader(Context p0,AttributeSet p1){
+       super(p0, p1, -1);
+    }
+    public void RecommendUserHorizonItemHeader(Context p0,AttributeSet p1,int p2){
+       super(p0, p1, p2);
+       FrameLayout.inflate(p0, R.layout.arg_RES_7f0d12c9, this);
+    }
+}

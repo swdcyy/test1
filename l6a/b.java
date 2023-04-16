@@ -1,0 +1,24 @@
+package l6a.b;
+import com.smile.gifshow.annotation.provider.v2.Accessor;
+import l6a.d;
+import com.yxcorp.gifshow.detail.slideplay.nasa.recommenduser.entity.NasaRecommendUserFeed;
+import java.lang.Object;
+import com.yxcorp.gifshow.detail.slideplay.nasa.recommenduser.entity.RecommendUserMeta;
+
+public class b extends Accessor	// class@002d58
+{
+    public final NasaRecommendUserFeed c;
+    public final d d;
+
+    public void b(d p0,NasaRecommendUserFeed p1){
+       this.d = p0;
+       this.c = p1;
+       super();
+    }
+    public Object get(){
+       return this.c.mRecommendUserMeta;
+    }
+    public void set(Object p0){
+       this.c.mRecommendUserMeta = p0;
+    }
+}

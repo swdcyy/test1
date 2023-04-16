@@ -1,0 +1,67 @@
+package com.yxcorp.gifshow.gamecenter.api.pluginimpl.GameCenterPlugin;
+import tkd.b;
+import java.lang.String;
+import brd.t;
+import com.yxcorp.gifshow.gamecenter.api.model.GameCenterDownloadParams;
+import java.lang.ref.WeakReference;
+import com.yxcorp.gifshow.gamecenter.api.model.JsAppointGameParams;
+import com.yxcorp.gifshow.gamecenter.api.pluginimpl.GameCenterPendingInstallInfo;
+import android.app.Activity;
+import com.yxcorp.gifshow.gamecenter.api.model.GameCenterDownloadParams$DownloadInfo;
+import java.util.List;
+import android.view.View;
+import com.trello.rxlifecycle3.components.support.RxFragment;
+import android.app.Application;
+import yka.c;
+import android.content.Context;
+
+public interface abstract GameCenterPlugin implements b	// class@0012ad
+{
+
+    t acceptReward(String p0,String p1,String p2);
+    void addAppointedGameId(String p0);
+    boolean allowDownloadGameResource(GameCenterDownloadParams p0);
+    t appointGame(WeakReference p0,String p1,String p2,String p3);
+    void appointGame(String p0,String p1,int p2,WeakReference p3,int p4,int p5,String p6,String p7,String p8);
+    t appointGameFromJs(WeakReference p0,JsAppointGameParams p1);
+    boolean canGameAppoint(int p0);
+    boolean canGameDownload(int p0);
+    void clearDownloadListeners(String p0);
+    void clickGameCenterPendingInstallInfo(GameCenterPendingInstallInfo p0);
+    void gameDownload(Activity p0,GameCenterDownloadParams p1);
+    GameCenterDownloadParams$DownloadInfo gameDownloadProgress(GameCenterDownloadParams p0);
+    List getAllGameCenterDownloadInfo();
+    View getDownloadManagerIcon(Activity p0,int p1,String p2);
+    String getDownloadManagerUrl();
+    String getDownloadTraceId(String p0);
+    GameCenterDownloadParams$DownloadInfo getGameCenterDownloadInfoByGameId(String p0);
+    GameCenterPendingInstallInfo getGameCenterPendingInstallInfo();
+    GameCenterPendingInstallInfo getGameCenterTransientLastCompletedPendingInstallInfo();
+    long getGamePackageVersion(String p0);
+    Activity getHomeActivity();
+    View getSearchIcon(Activity p0,String p1);
+    RxFragment getSoGameListFragment(String p0,String p1);
+    void gotoInstallApk(Activity p0,String p1,boolean p2);
+    void gotoInstallApk(String p0);
+    GameCenterDownloadParams$DownloadInfo handleGameToBDownload(Activity p0,GameCenterDownloadParams p1);
+    void initialize(Application p0);
+    boolean isGameApkFileExist(String p0);
+    boolean isGameDownload(String p0);
+    boolean isGameDownloadCacheInited();
+    boolean isPluginMode();
+    void jump2WebViewPage(Activity p0,String p1);
+    void onHomeActivityCreate(Activity p0);
+    void onHomeActivityDestroy();
+    void onLoginFinished();
+    t profileSignIn(String p0);
+    void registerGameCenterDownloadListener(String p0,String p1,c p2);
+    void registerGlobalDownloadListener(String p0,WeakReference p1);
+    void removeDownloadInfo(String p0);
+    void reportGameDownloadComplete();
+    void setImpl(b p0);
+    void startGameActivityIndirect(Activity p0,String p1,int p2);
+    void startGameActivityIndirect(Activity p0,String p1,boolean p2);
+    void startGameDownloadManagerActivityIndirect(Context p0,boolean p1);
+    void startZtGameDetailActivityIndirect(Activity p0,String p1,String p2,long p3,String p4);
+    void unregisterGlobalDownloadListener(String p0);
+}

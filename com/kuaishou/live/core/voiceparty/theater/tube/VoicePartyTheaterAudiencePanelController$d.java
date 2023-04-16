@@ -1,0 +1,27 @@
+package com.kuaishou.live.core.voiceparty.theater.tube.VoicePartyTheaterAudiencePanelController$d;
+import java.lang.Runnable;
+import com.kuaishou.live.core.voiceparty.theater.tube.VoicePartyTheaterAudiencePanelController;
+import com.kuaishou.live.core.voiceparty.theater.model.VoicePartyTheaterPhotoWithEpisode;
+import java.lang.Object;
+import java.lang.Class;
+import java.lang.String;
+import com.kwai.robust.PatchProxy;
+
+public final class VoicePartyTheaterAudiencePanelController$d implements Runnable	// class@0019f0
+{
+    public final VoicePartyTheaterAudiencePanelController b;
+    public final VoicePartyTheaterPhotoWithEpisode c;
+
+    public void VoicePartyTheaterAudiencePanelController$d(VoicePartyTheaterAudiencePanelController p0,VoicePartyTheaterPhotoWithEpisode p1){
+       this.b = p0;
+       this.c = p1;
+       super();
+    }
+    public final void run(){
+       if (PatchProxy.applyVoid(null, this, VoicePartyTheaterAudiencePanelController$d.class, "1")) {
+          return;
+       }
+       this.b.Z2(this.c, "PLAY");
+       return;
+    }
+}

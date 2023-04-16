@@ -1,0 +1,68 @@
+package h69.b;
+import tkd.b;
+import com.kuaishou.android.model.music.Music;
+import h69.c;
+import i69.f;
+import com.kwai.video.minecraft.model.EditorSdk2V2$VideoEditorProject;
+import com.yxcorp.gifshow.edit.draft.model.workspace.c;
+import com.yxcorp.gifshow.aicut.VideoTemplate;
+import brd.t;
+import android.app.Activity;
+import com.kwai.feature.post.api.aicut.AICutProjectOption;
+import com.yxcorp.gifshow.aicut.api.AICutStyle;
+import com.yxcorp.gifshow.activity.GifshowActivity;
+import h69.i;
+import n3d.a;
+import androidx.fragment.app.FragmentActivity;
+import com.yxcorp.gifshow.album.IAlbumMainFragment;
+import java.lang.String;
+import com.yxcorp.gifshow.aicut.KwaiAICutStyle;
+import com.yxcorp.gifshow.aicut.api.AICutGroupType;
+import java.util.List;
+import h69.f;
+import com.yxcorp.gifshow.aicut.api.AICutErrorCode;
+import com.yxcorp.gifshow.aicut.VideoTemplateResponse;
+
+public interface abstract b implements b	// class@002550
+{
+
+    Music A();
+    f Br(c p0);
+    void Ia(EditorSdk2V2$VideoEditorProject p0,c p1);
+    VideoTemplate LM();
+    t ME();
+    void Np(Activity p0,AICutProjectOption p1);
+    t Oc(AICutStyle p0);
+    void P3(double p0);
+    void Pt(GifshowActivity p0,i p1,a p2);
+    void Pu(FragmentActivity p0,IAlbumMainFragment p1,AICutProjectOption p2,boolean p3,boolean p4,boolean p5,String p6,boolean p7);
+    KwaiAICutStyle QC();
+    t Qk(AICutGroupType p0);
+    t R50(List p0,int p1);
+    Music X40(String p0);
+    List Ye();
+    void Yq(EditorSdk2V2$VideoEditorProject p0);
+    boolean ba(AICutStyle p0);
+    void c8(c p0,VideoTemplate p1);
+    t cP(long p0,String p1);
+    f getProject();
+    void ib(f p0);
+    void jF();
+    f jq();
+    void jv(c p0);
+    t kT(List p0,int p1,List p2,List p3,List p4,boolean p5,boolean p6,EditorSdk2V2$VideoEditorProject p7,int p8);
+    void ki(boolean p0,boolean p1,IAlbumMainFragment p2);
+    t ku(String p0,List p1,List p2,String p3,boolean p4);
+    boolean mT();
+    void q5();
+    void r00(AICutErrorCode p0);
+    void release();
+    void sU(EditorSdk2V2$VideoEditorProject p0,c p1);
+    void t0(double p0);
+    void tN();
+    boolean tm(Activity p0,String p1,String p2,boolean p3);
+    void uj();
+    c xA();
+    void xo(c p0);
+    VideoTemplateResponse y6();
+}

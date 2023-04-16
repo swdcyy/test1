@@ -1,0 +1,201 @@
+package com.kwai.feature.post.api.magic.webp.vm.MagicBaseWebpVM$WebpLruMap;
+import java.util.LinkedHashMap;
+import com.kwai.feature.post.api.magic.webp.vm.MagicBaseWebpVM$WebpLruMap$a;
+import nsd.u;
+import java.lang.Object;
+import java.lang.Class;
+import java.lang.String;
+import com.kwai.robust.PatchProxy;
+import com.kwai.robust.PatchProxyResult;
+import java.lang.Boolean;
+import java.util.HashMap;
+import java.lang.Integer;
+import java.util.Set;
+import java.lang.Number;
+import java.util.Collection;
+import java.util.Map$Entry;
+import lnc.p3;
+import q87.c;
+
+public final class MagicBaseWebpVM$WebpLruMap extends LinkedHashMap	// class@0013f8
+{
+    public static final MagicBaseWebpVM$WebpLruMap$a Companion;
+
+    static {
+       MagicBaseWebpVM$WebpLruMap.Companion = new MagicBaseWebpVM$WebpLruMap$a(null);
+    }
+    public void MagicBaseWebpVM$WebpLruMap(){
+       super(501, 0x3f400000, true);
+    }
+    public final boolean containsKey(Object p0){
+       Object obj = PatchProxy.applyOneRefs(p0, this, MagicBaseWebpVM$WebpLruMap.class, "7");
+       if (obj != PatchProxyResult.class) {
+          return obj.booleanValue();
+       }
+       if (p0 instanceof String) {
+          return this.containsKey(p0);
+       }
+       return false;
+    }
+    public boolean containsKey(String p0){
+       Object obj = PatchProxy.applyOneRefs(p0, this, MagicBaseWebpVM$WebpLruMap.class, "6");
+       if (obj != PatchProxyResult.class) {
+          return obj.booleanValue();
+       }
+       return super.containsKey(p0);
+    }
+    public boolean containsValue(Integer p0){
+       Object obj = PatchProxy.applyOneRefs(p0, this, MagicBaseWebpVM$WebpLruMap.class, "8");
+       if (obj != PatchProxyResult.class) {
+          return obj.booleanValue();
+       }
+       return super.containsValue(p0);
+    }
+    public final boolean containsValue(Object p0){
+       Object obj = PatchProxy.applyOneRefs(p0, this, MagicBaseWebpVM$WebpLruMap.class, "9");
+       if (obj != PatchProxyResult.class) {
+          return obj.booleanValue();
+       }
+       if (p0 instanceof Integer) {
+          return this.containsValue(p0);
+       }
+       return false;
+    }
+    public final Set entrySet(){
+       Object obj = PatchProxy.apply(null, this, MagicBaseWebpVM$WebpLruMap.class, "15");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       return this.getEntries();
+    }
+    public Integer get(String p0){
+       Object obj = PatchProxy.applyOneRefs(p0, this, MagicBaseWebpVM$WebpLruMap.class, "10");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       return super.get(p0);
+    }
+    public final Object get(Object p0){
+       Object obj = PatchProxy.applyOneRefs(p0, this, MagicBaseWebpVM$WebpLruMap.class, "11");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       if (p0 instanceof String) {
+          return this.get(p0);
+       }
+       return null;
+    }
+    public Set getEntries(){
+       Object obj = PatchProxy.apply(null, this, MagicBaseWebpVM$WebpLruMap.class, "14");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       return super.entrySet();
+    }
+    public Set getKeys(){
+       Object obj = PatchProxy.apply(null, this, MagicBaseWebpVM$WebpLruMap.class, "16");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       return super.keySet();
+    }
+    public Integer getOrDefault(String p0,Integer p1){
+       Object obj = PatchProxy.applyTwoRefs(p0, p1, this, MagicBaseWebpVM$WebpLruMap.class, "12");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       return super.getOrDefault(p0, p1);
+    }
+    public final Object getOrDefault(Object p0,Object p1){
+       Object obj = PatchProxy.applyTwoRefs(p0, p1, this, MagicBaseWebpVM$WebpLruMap.class, "13");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       if (p0 instanceof String) {
+          return this.getOrDefault(p0, p1);
+       }
+       return p1;
+    }
+    public int getSize(){
+       Object obj = PatchProxy.apply(null, this, MagicBaseWebpVM$WebpLruMap.class, "20");
+       if (obj != PatchProxyResult.class) {
+          return obj.intValue();
+       }
+       return super.size();
+    }
+    public Collection getValues(){
+       Object obj = PatchProxy.apply(null, this, MagicBaseWebpVM$WebpLruMap.class, "18");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       return super.values();
+    }
+    public final Set keySet(){
+       Object obj = PatchProxy.apply(null, this, MagicBaseWebpVM$WebpLruMap.class, "17");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       return this.getKeys();
+    }
+    public Integer remove(String p0){
+       Object obj = PatchProxy.applyOneRefs(p0, this, MagicBaseWebpVM$WebpLruMap.class, "2");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       return super.remove(p0);
+    }
+    public final Object remove(Object p0){
+       Object obj = PatchProxy.applyOneRefs(p0, this, MagicBaseWebpVM$WebpLruMap.class, "3");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       if (p0 instanceof String) {
+          return this.remove(p0);
+       }
+       return null;
+    }
+    public final boolean remove(Object p0,Object p1){
+       Object obj = PatchProxy.applyTwoRefs(p0, p1, this, MagicBaseWebpVM$WebpLruMap.class, "5");
+       if (obj != PatchProxyResult.class) {
+          return obj.booleanValue();
+       }
+       if (p0 instanceof String && p1 instanceof Integer) {
+          return this.remove(p0, p1);
+       }
+       return false;
+    }
+    public boolean remove(String p0,Integer p1){
+       Object obj = PatchProxy.applyTwoRefs(p0, p1, this, MagicBaseWebpVM$WebpLruMap.class, "4");
+       if (obj != PatchProxyResult.class) {
+          return obj.booleanValue();
+       }
+       return super.remove(p0, p1);
+    }
+    public boolean removeEldestEntry(Map$Entry p0){
+       p0 = PatchProxy.applyOneRefs(p0, this, MagicBaseWebpVM$WebpLruMap.class, "1");
+       if (p0 != PatchProxyResult.class) {
+          return p0.booleanValue();
+       }
+       int i = 0;
+       boolean b = (this.size() > 500)? true: false;
+       if (b) {
+          Object[] objArray = new Object[i];
+          p3.D().A("MagicFaceBaseWebpVM", "countMap size is out of bounds, MAX_ENTRIES:500", objArray);
+       }
+       return b;
+    }
+    public final int size(){
+       Object obj = PatchProxy.apply(null, this, MagicBaseWebpVM$WebpLruMap.class, "21");
+       if (obj != PatchProxyResult.class) {
+          return obj.intValue();
+       }
+       return this.getSize();
+    }
+    public final Collection values(){
+       Object obj = PatchProxy.apply(null, this, MagicBaseWebpVM$WebpLruMap.class, "19");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       return this.getValues();
+    }
+}

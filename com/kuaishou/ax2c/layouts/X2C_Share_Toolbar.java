@@ -1,0 +1,102 @@
+package com.kuaishou.ax2c.layouts.X2C_Share_Toolbar;
+import com.kuaishou.ax2c.IViewCreator;
+import java.lang.Object;
+import android.content.Context;
+import android.view.View;
+import android.content.res.Resources;
+import com.yxcorp.gifshow.widget.KwaiActionBar;
+import android.util.TypedValue;
+import android.content.res.Resources$Theme;
+import android.widget.LinearLayout$LayoutParams;
+import android.util.DisplayMetrics;
+import cw9.c;
+import android.widget.RelativeLayout;
+import android.view.ViewGroup$LayoutParams;
+import androidx.appcompat.widget.AppCompatButton;
+import android.util.AttributeSet;
+import android.widget.RelativeLayout$LayoutParams;
+import android.widget.Button;
+import android.graphics.drawable.Drawable;
+import com.yxcorp.gifshow.widget.EmojiTextView;
+import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatTextView;
+import android.graphics.Typeface;
+import com.kwai.library.widget.textview.KwaiSizeAdjustableTextView;
+
+public class X2C_Share_Toolbar implements IViewCreator	// class@001130
+{
+
+    public void X2C_Share_Toolbar(){
+       super();
+    }
+    public View createView(Context p0){
+       Resources resources = p0.getResources();
+       KwaiActionBar kwaiActionBa = new KwaiActionBar(p0);
+       TypedValue typedValue = new TypedValue();
+       p0.getTheme().resolveAttribute(R.attr.arg_RES_7f0400f6, typedValue, true);
+       kwaiActionBa.setId(R.id.title_root);
+       kwaiActionBa.setLayoutParams(new LinearLayout$LayoutParams(-1, TypedValue.complexToDimensionPixelOffset(typedValue.data, c.c(resources))));
+       AppCompatButton uAppCompatBu = new AppCompatButton(kwaiActionBa.getContext(), null, 0);
+       TypedValue typedValue1 = new TypedValue();
+       p0.getTheme().resolveAttribute(R.attr.arg_RES_7f0400f6, typedValue1, true);
+       TypedValue typedValue2 = new TypedValue();
+       p0.getTheme().resolveAttribute(R.attr.arg_RES_7f0400f6, typedValue2, true);
+       RelativeLayout$LayoutParams layoutParams = new RelativeLayout$LayoutParams(TypedValue.complexToDimensionPixelOffset(typedValue1.data, c.c(resources)), TypedValue.complexToDimensionPixelOffset(typedValue2.data, c.c(resources)));
+       uAppCompatBu.setId(R.id.left_btn);
+       layoutParams.addRule(9, -1);
+       layoutParams.addRule(15, -1);
+       uAppCompatBu.setTextSize(0, (float)c.b(resources, R.dimen.arg_RES_7f070f71));
+       uAppCompatBu.setTextColor(resources.getColor(R.color.arg_RES_7f061a4c));
+       uAppCompatBu.setBackgroundDrawable(null);
+       uAppCompatBu.setLayoutParams(layoutParams);
+       kwaiActionBa.addView(uAppCompatBu);
+       uAppCompatBu = new AppCompatButton(kwaiActionBa.getContext(), null, 0);
+       layoutParams = new RelativeLayout$LayoutParams((int)TypedValue.applyDimension(true, 40.00f, c.c(resources)), (int)TypedValue.applyDimension(true, 40.00f, c.c(resources)));
+       uAppCompatBu.setId(R.id.right_btn);
+       layoutParams.addRule(11, -1);
+       layoutParams.addRule(15, -1);
+       layoutParams.rightMargin = c.b(resources, 0x7f070a7f);
+       uAppCompatBu.setBackgroundDrawable(null);
+       uAppCompatBu.setGravity(21);
+       uAppCompatBu.setMaxLines(true);
+       uAppCompatBu.setTextColor(resources.getColor(R.color.arg_RES_7f061b29));
+       uAppCompatBu.setTextSize(0, (float)c.b(resources, R.dimen.arg_RES_7f070f71));
+       uAppCompatBu.setVisibility(8);
+       uAppCompatBu.setLayoutParams(layoutParams);
+       kwaiActionBa.addView(uAppCompatBu);
+       uAppCompatBu = new AppCompatButton(kwaiActionBa.getContext(), null, 0);
+       layoutParams = new RelativeLayout$LayoutParams(c.b(resources, 0x7f07032a), c.b(resources, 0x7f0702ef));
+       uAppCompatBu.setId(R.id.right_btn_v2);
+       layoutParams.addRule(11, -1);
+       layoutParams.addRule(15, -1);
+       layoutParams.rightMargin = c.b(resources, 0x7f070a7f);
+       uAppCompatBu.setBackgroundDrawable(null);
+       uAppCompatBu.setGravity(17);
+       uAppCompatBu.setMaxLines(true);
+       uAppCompatBu.setTextColor(resources.getColor(R.color.arg_RES_7f061fbd));
+       uAppCompatBu.setTextSize(0, (float)c.b(resources, R.dimen.arg_RES_7f07011b));
+       uAppCompatBu.setVisibility(8);
+       uAppCompatBu.setLayoutParams(layoutParams);
+       kwaiActionBa.addView(uAppCompatBu);
+       EmojiTextView uEmojiTextVi = new EmojiTextView(kwaiActionBa.getContext());
+       layoutParams = new RelativeLayout$LayoutParams(-1, -1);
+       uEmojiTextVi.setId(R.id.title_tv);
+       layoutParams.addRule(13, -1);
+       layoutParams.leftMargin = c.b(resources, 0x7f070165);
+       layoutParams.rightMargin = c.b(resources, 0x7f070165);
+       uEmojiTextVi.setGravity(17);
+       uEmojiTextVi.setMaxLines(true);
+       TypedValue typedValue3 = new TypedValue();
+       p0.getTheme().resolveAttribute(R.attr.arg_RES_7f0400f8, typedValue3, true);
+       uEmojiTextVi.setTextColor(typedValue3.data);
+       typedValue3 = new TypedValue();
+       p0.getTheme().resolveAttribute(R.attr.arg_RES_7f0400f9, typedValue3, true);
+       uEmojiTextVi.setTextSize(true, TypedValue.complexToFloat(typedValue3.data));
+       uEmojiTextVi.setTypeface(null, true);
+       uEmojiTextVi.setTextSizeAdjustable(true);
+       uEmojiTextVi.setLayoutParams(layoutParams);
+       kwaiActionBa.addView(uEmojiTextVi);
+       kwaiActionBa.onFinishInflate();
+       return kwaiActionBa;
+    }
+}

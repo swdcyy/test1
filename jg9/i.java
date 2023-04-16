@@ -1,0 +1,27 @@
+package jg9.i;
+import ekd.f$j;
+import android.view.View;
+import android.animation.Animator;
+import java.lang.Object;
+import java.lang.Class;
+import java.lang.String;
+import com.kwai.robust.PatchProxy;
+import com.yxcorp.utility.n;
+
+public final class i extends f$j	// class@002a9d
+{
+    public final View a;
+
+    public void i(View p0){
+       this.a = p0;
+       super();
+    }
+    public void onAnimationEnd(Animator p0){
+       if (PatchProxy.applyVoidOneRefs(p0, this, i.class, "1")) {
+          return;
+       }
+       this.a.setAlpha(0x3f800000);
+       n.Y(this.a, 4, false);
+       return;
+    }
+}

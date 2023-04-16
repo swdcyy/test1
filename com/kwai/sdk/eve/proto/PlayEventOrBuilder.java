@@ -1,0 +1,62 @@
+package com.kwai.sdk.eve.proto.PlayEventOrBuilder;
+import com.google.protobuf.MessageLiteOrBuilder;
+import java.lang.String;
+import com.google.protobuf.ByteString;
+import com.kwai.sdk.eve.proto.ContentType;
+import com.kwai.sdk.eve.proto.HetuTag;
+import com.kwai.sdk.eve.proto.ImageType;
+import com.kwai.sdk.eve.proto.PlayEvent$LiveWatchStatus;
+
+public interface abstract PlayEventOrBuilder implements MessageLiteOrBuilder	// class@001601
+{
+
+    long getAfkPlayedDurationMs();
+    String getAuthorId();
+    ByteString getAuthorIdBytes();
+    long getBufferDuration();
+    int getClickPauseCount();
+    boolean getCommentStatus();
+    long getCommentStayDurationMs();
+    String getContentId();
+    ByteString getContentIdBytes();
+    ContentType getContentType();
+    int getContentTypeValue();
+    boolean getDownloadStatus();
+    int getEnterProfileCount();
+    boolean getEnterSideSlideStatus();
+    String getExpTag();
+    ByteString getExpTagBytes();
+    boolean getFavStatus();
+    boolean getFollowStatus();
+    boolean getForwardStatus();
+    boolean getHateStatus();
+    HetuTag getHetuTag();
+    boolean getHudongStatus();
+    ImageType getImageType();
+    int getImageTypeValue();
+    boolean getLandscapeStatus();
+    double getLatitude();
+    boolean getLikeStatus();
+    PlayEvent$LiveWatchStatus getLiveWatchStatus();
+    int getLiveWatchStatusValue();
+    String getLlsid();
+    ByteString getLlsidBytes();
+    double getLongitude();
+    String getPage();
+    ByteString getPageBytes();
+    String getPhotoRecoSource();
+    ByteString getPhotoRecoSourceBytes();
+    int getPlaySoundVolume();
+    long getPlayedDurationMs();
+    long getPrepareDurationMs();
+    String getReferPage();
+    ByteString getReferPageBytes();
+    String getSessionId();
+    ByteString getSessionIdBytes();
+    int getStalledCount();
+    long getTimestamp();
+    String getTopPage();
+    ByteString getTopPageBytes();
+    long getTotalDurationMs();
+    boolean hasHetuTag();
+}

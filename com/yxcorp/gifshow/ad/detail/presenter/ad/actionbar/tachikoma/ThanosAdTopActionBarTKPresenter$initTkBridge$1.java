@@ -1,0 +1,125 @@
+package com.yxcorp.gifshow.ad.detail.presenter.ad.actionbar.tachikoma.ThanosAdTopActionBarTKPresenter$initTkBridge$1;
+import msd.l;
+import kotlin.jvm.internal.Lambda;
+import nz8.g;
+import java.lang.Object;
+import org.json.JSONObject;
+import com.kwai.robust.PatchProxyResult;
+import java.lang.Class;
+import java.lang.String;
+import com.kwai.robust.PatchProxy;
+import kotlin.jvm.internal.a;
+import fg6.a;
+import java.util.Objects;
+import com.yxcorp.gifshow.ad.tachikoma.model.AdActionBarTkData;
+import com.kuaishou.android.model.ads.PhotoAdvertisement$TkTemplateData;
+import com.yxcorp.gifshow.entity.QPhoto;
+import com.kuaishou.android.model.ads.PhotoAdvertisement;
+import com.kuaishou.android.model.feed.k;
+import com.kwai.framework.model.user.User;
+import kotlin.collections.ArraysKt___ArraysKt;
+import com.yxcorp.gifshow.model.CDNUrl;
+import g59.e;
+import com.google.gson.Gson;
+
+public final class ThanosAdTopActionBarTKPresenter$initTkBridge$1 extends Lambda implements l	// class@001581
+{
+    public final g this$0;
+
+    public void ThanosAdTopActionBarTKPresenter$initTkBridge$1(g p0){
+       this.this$0 = p0;
+       super(1);
+    }
+    public Object invoke(Object p0){
+       return this.invoke(p0);
+    }
+    public final Object invoke(JSONObject p0){
+       Gson a;
+       PatchProxyResult patchProxyRe = PatchProxyResult.class;
+       ThanosAdTopActionBarTKPresenter$initTkBridge$1 obj = PatchProxy.applyOneRefs(p0, this, ThanosAdTopActionBarTKPresenter$initTkBridge$1.class, "1");
+       if (obj != patchProxyRe) {
+          return obj;
+       }
+       a.p(p0, "it");
+       a = a.a;
+       obj = this.this$0;
+       Objects.requireNonNull(obj);
+       Object[] objArray = null;
+       AdActionBarTkData uAdActionBar = PatchProxy.apply(objArray, obj, g.class, "8");
+       if (uAdActionBar != patchProxyRe) {
+       }else {
+          uAdActionBar = new AdActionBarTkData();
+          g y = obj.y;
+          PhotoAdvertisement$TkTemplateData mData = (y != null)? y.mData: objArray;
+          uAdActionBar.setDataString(mData);
+          y = obj.p;
+          if (y == null) {
+             a.S("mPhoto");
+          }
+          uAdActionBar.setAd(k.B(y));
+          y = obj.p;
+          if (y == null) {
+             a.S("mPhoto");
+          }
+          User user = y.getUser();
+          if (user != null) {
+             user = user.mAvatars;
+             if (user != null) {
+                CDNUrl uCDNUrl = ArraysKt___ArraysKt.Ib(user);
+                if (uCDNUrl != null) {
+                   uCDNUrl = uCDNUrl.mUrl;
+                   if (uCDNUrl != null) {
+                      objArray = uCDNUrl;
+                   label_0076 :
+                      uAdActionBar.setHeadUrl(objArray);
+                      y = obj.p;
+                      if (y == null) {
+                         a.S("mPhoto");
+                      }
+                      user = y.getUser();
+                      if (user != null) {
+                         user = user.mName;
+                         if (user != null) {
+                         label_008d :
+                            uAdActionBar.setUserName(user);
+                            y = obj.p;
+                            if (y == null) {
+                               a.S("mPhoto");
+                            }
+                            user = y.getUser();
+                            int i = 1;
+                            if (user == null || user.isFollowingOrFollowRequesting() != i) {
+                               i = 0;
+                            }
+                            uAdActionBar.setFollowing(i);
+                            uAdActionBar.setDetailBrowseType(0);
+                            y = obj.p;
+                            if (y == null) {
+                               a.S("mPhoto");
+                            }
+                            uAdActionBar.setMHasLiveReserved(e.a(y));
+                         }
+                      }
+                      String str1 = "";
+                      goto label_008d ;
+                   }
+                }
+             }
+          }
+          y = obj.p;
+          if (y == null) {
+             a.S("mPhoto");
+          }
+          user = y.getUser();
+          if (user != null) {
+             objArray = user.mAvatar;
+             goto label_0076 ;
+          }else {
+             goto label_0076 ;
+          }
+       }
+       String str = a.q(uAdActionBar);
+       a.o(str, "Gsons.KWAI_GSON.toJson\(createActionBarData\(\)\)");
+       return str;
+    }
+}

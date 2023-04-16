@@ -1,0 +1,22 @@
+package com.kuaishou.post.story.entrance.h;
+import erd.g;
+import java.lang.Object;
+import java.lang.Throwable;
+import com.kuaishou.post.story.entrance.StoryMoodFragment;
+import java.lang.String;
+import com.yxcorp.gifshow.util.PostUtils;
+
+public final class h implements g	// class@000b3a
+{
+    public static final h b;
+
+    static {
+       h.b = new h();
+    }
+    public void h(){
+       super();
+    }
+    public final void accept(Object p0){
+       PostUtils.D("StoryPureTextFragment", "init editSession: ", p0);
+    }
+}

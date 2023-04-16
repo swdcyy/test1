@@ -1,0 +1,23 @@
+package agd.k;
+import androidx.recyclerview.widget.RecyclerView$ViewHolder;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class k extends RecyclerView$ViewHolder	// class@000032
+{
+    public ImageView a;
+    public ImageView b;
+    public TextView c;
+    public ImageView d;
+    public View e;
+
+    public void k(View p0){
+       super(p0);
+       this.e = p0;
+       this.d = p0.findViewById(0x7f0a0d61);
+       this.a = p0.findViewById(0x7f0a433a);
+       this.b = p0.findViewById(0x7f0a06eb);
+       this.c = p0.findViewById(0x7f0a3f20);
+    }
+}

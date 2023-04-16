@@ -1,0 +1,26 @@
+package buc.f$a;
+import androidx.lifecycle.ViewModelProvider$Factory;
+import java.lang.Object;
+import java.lang.Class;
+import androidx.lifecycle.ViewModel;
+import java.lang.String;
+import com.kwai.robust.PatchProxy;
+import com.kwai.robust.PatchProxyResult;
+import kotlin.jvm.internal.a;
+import buc.f;
+
+public final class f$a implements ViewModelProvider$Factory	// class@000492
+{
+
+    public void f$a(){
+       super();
+    }
+    public ViewModel create(Class p0){
+       Object obj = PatchProxy.applyOneRefs(p0, this, f$a.class, "1");
+       if (obj != PatchProxyResult.class) {
+          return obj;
+       }
+       a.p(p0, "modelClass");
+       return new f();
+    }
+}
